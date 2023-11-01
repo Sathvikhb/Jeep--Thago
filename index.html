@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Jeeps</title>
+    <link rel="shortcut icon" href="car logo.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,html{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    background-color: rgb(162, 232, 9);
+  padding: 8px 16px;
+  
+  
+}
+.navitem,.navbar-nav{
+    display: inline;
+}
+.navbar-nav{
+  
+    border-top: 3px solid green;
+    
+}
+
+.navlink{
+    margin-left: 40px;
+transition: color 0.5s;
+}
+.navlink:hover{
+    color: rgb(17, 242, 51);
+    
+}
+.navlink,.navbarbrand{
+    text-decoration: none;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.navbarbrand{
+    font-size: 25px;
+   letter-spacing: 1px;
+   margin-left: 60px;
+}
+.navbar img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+.navbarbrand span{
+    font-size: 40px;
+    color: rgb(255, 128, 0)!important;
+}
+.banner{
+    height: 650px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://media3.giphy.com/media/bZ736QgKB8H5jfzC1X/200w.webp?cid=ecf05e471wsiaasj3axn0avl2timisejajx73xmpluwl2ly0&ep=v1_gifs_search&rid=200w.webp&ct=g");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    
+   
+}
+.bannercard{
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    width: 45%;
+    border-top: 3px solid rgb(168, 235, 23);
+    margin:150px auto;padding: 20px;
+    font-size: 16px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    text-align: justify;
+  
+
+}
+.bnbtn{
+    border: 2px solid rgb(9, 12, 9);
+    padding: 10px 18px;
+    border-radius: 10%;
+    background-color: transparent;
+    color: antiquewhite;
+    margin-left: 230px;
+    transition:background-color 0.5s;
+}
+.bnbtn:hover{
+    background-color: rgb(19, 7, 192);
+}
+.imagesection img{
+    height: 200px;
+    width: 330px;
+    display: inline-block
+}
+.contact{
+    height: 10px;
+    width: 500px;
+    position: absolute;
+   top: 20px;
+   left: 200px;
+   
+   }
+   .contact a{
+    color: black;
+   }
+   .mail{
+    height: 10px;
+    width: 500px;
+    position: relative;
+    top: -70px;
+    left: 400px;
+   }
+   .mail a{
+    color: rgb(26, 23, 23);
+    text-decoration: none;
+    bottom: 25px;
+    position: relative;
+   }
+   .icons{
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    padding-left: 40px;
+    word-spacing: 50px;
+   }
+   .bannercard a{
+   
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+    left: 180px;
+    font-size: 22px;
+    background-color: rgb(20, 23, 224);
+    color: antiquewhite;
+    text-decoration: none;
+    
+   }
+   .bannercard a:hover{
+    color: red;
+   }
+   .home{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(143, 235, 214);
+    margin-top: -22px;
+   }
+   .inerhome1{
+    height: 300px;
+    width: 600px;
+   }
+   .inerhome2{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    top: -300px;
+    left: 820px;
+   }
+   .inerhome2 p{
+   text-align: justify;
+   font-size: 20px;
+   }
+   .inlist{
+    font-size: 20px;
+   }
+   .inerhome1 h1{
+    font-size: 35px;
+   }
+   .inerhome1 h2{
+    font-size: 25px;
+    position: relative;
+    top: 120px;
+   }
+   .jon{
+    height: 550px;
+    width: 100%;
+   }
+   .jon p{
+    font-size: 20px;
+    text-align: justify;
+   }
+   .rentals{
+    height: 500px;
+    width: 100%;
+    background-color: #D7BDE2;
+   }
+   .rent1{
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+   }
+   .rent2{
+    height: 400px;
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    text-align: justify;
+    font-size: 18px;
+   }
+  .rentals h1{
+    font-size: 25px;
+    text-align: center;
+  }
+  .rent1 h1{
+    position: relative;
+    top: -150px;
+  }
+  .rent1 h2{
+    position: relative;
+    top: -100px;
+  }
+  .rent1 button{
+    height: 50px;
+    width: 150px;
+    background-color: aqua;
+    color: red;
+    position: relative;
+    left: 150px;
+    font-size: 15px;
+  }
+  .inventory {
+    height: 550px;
+    width: 100%;
+    display: inline-block;
+    background-color: #D0ECE7
+;
+    color: red;
+  }
+  .inventory img{
+    height: 200px;
+    width: 250px;
+    margin: 8px;
+    border-radius: 50%;
+    
+  }.inventory img:hover{
+    transform: scale(1.2) ;
+    border-radius: 0%;
+  }
+  .contactus{
+    height: 500px;
+    width: 100%;
+    background-color: #D2B4DE;
+  }
+  .cont{
+    height: 300px;
+    width: 50%;
+  }
+  .cont h1{
+    font-size: 25px;
+
+  }
+  .cont input{
+    height: 60px;
+    width: 250px;
+    display: block;
+    margin: 50px;
+  }
+  .cont h2{
+    position: relative;
+    top: 40px;
+    color: brown;
+  }
+  .contactus img{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 800px;
+    top: -200px;
+  }
+  .cont button{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: -80px;
+    left: 350px;
+    font-size: 30px;
+  }
+  .cont  button:hover{
+    color: red;
+  }
+  .last{
+    height: 200px;
+    width: 100%;
+  }
+  .call{
+    height: 150px;
+    width: 150px;
+  }
+  .call h2{
+font-size: 15px;
+position: relative;
+top: -90px;
+left: 70px;
+  }
+  .call h1{
+position: relative;
+left: 80px;
+top: -70px;
+  }
+  .call p{
+    position: relative;
+    top: 30px;
+    size: 80px;
+  }
+  .vl {
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  left: 220px;
+  top: -750px;
+}
+.map{
+    height: 150px;
+    width: 150px;
+  }
+  .map h2{
+font-size: 15px;
+position: relative;
+top: -250px;
+left: 300px;
+  }
+  .map h1{
+position: relative;
+left: 300px;
+top: -230px;
+  }
+  .map p{
+    position: relative;
+    top: -140px;
+    left: 250px;
+  }
+  .v2 {
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  left:450px;
+  top: -850px;
+}
+.mail2{
+    height: 150px;
+    width: 150px;
+    font-size: 15px;
+  }
+  .mail2 h2{
+font-size: 15px;
+position: relative;
+top: -400px;
+left: 600px;
+
+  }
+  .mail2 h1{
+position: relative;
+top: -390px;
+left: 600px;
+
+  }
+  .mail2 p{
+    position: relative;
+    top: -300px;
+    left: 500px;
+  }
+  .v3 {
+  border-left: 6px solid green;
+  height: 100px;
+  position: relative;
+  left:880px;
+  top: -950px;
+}
+.time{
+  height: 150px;
+    width: 150px;
+}
+.time p{
+  position: relative;
+  top: -460px;
+  left: 900px;
+}
+.time h1{
+  position: relative;
+  top:-550px ;
+  left: 1000px;
+}
+.time pre{
+  position: relative;
+  top:-620px ;
+  left: 1110px;
+  font-size: 18px;
+}
+marquee{
+  font-size: 25px;
+  color: rgb(38, 0, 255);
+}
+.jeep{
+  width: 100%;
+  height: 600px;
+}
+.mar{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+    </style>
+</head>
+<body bgcolor="#D7BDE2">
+    <div class="banner">
+    <nav class="navbar">
+        <a href="" class="navbarbrand"><span>Jeep</span>Thago</a>
+
+        <ul class="navbar-nav">
+            <li  class="navitem"><a href="#home"class="navlink">HOME</a></li>
+            <li  class="navitem"><a href="#service"class="navlink">SERVICES</a></li>
+            <li  class="navitem"><a href="#rent"class="navlink">RENTALS</a></li>
+            <li class="navitem"><a href="carcollections.html"class="navlink">INVENTORY</a></li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDncq0SnVDPOd0oAg5jeNZMRZinjjAsc3_D0HWkVINvefO6IZyVdWUns7qmHFPW_g3hIc&usqp=CAU" alt="" >
+            <li class="navitem"><a href=""class="navlink">BOOKINGS</a></li>
+            <li class="navitem"><a href="#about"class="navlink">ABOUT US</a></li>
+            
+            <li class="navitem"><a href="#call"class="navlink">CONTACT</a></li>
+            <li class="navitem"><a href="login.html"class="navlink">LOGIN</a></li>
+        </ul>
+        <div class="contact">
+            <a href=""><i class="fa fa-phone" style="font-size:20px">+91 9035935952</i></a>
+        </div>
+        <div class="mail">
+            <a href=""><i class="fa fa-envelope" style="font-size:22px">jeeptago@gmail.com</i></i></a>
+
+        </div>
+        <div class="icons">
+            <i class="fa fa-instagram" style="font-size:28px;color:red"></i>
+            <i class="fa fa-facebook-f" style="font-size:28px;color:blue"></i>
+            <i class="fa fa-youtube-play" style="font-size:28px;color:red"></i>
+            <i class="fa fa-twitter" style="font-size:28px;color: blue;"></i>
+        </div>
+    </nav>
+
+    
+    <div class="bannercard">
+        <h1>Jeep thago</h1>
+        <p>The vintage era in the automotive world was a time of transition. The jeep started off in 1919 as still something of a rarity, and ended up, in 1930, well on the way towards ubiquity. In fact, automobile production at the end of this period was not matched again until the 1950s. In the intervening years, most industrialized countries built nationwide road systems with the result that, towards the end of the period, the ability to negotiate unpaved roads was no longer a prime consideration of automotive design.</p>
+       
+        <a href="carcollections.html" target="_blank">View Collection</a>
+    </div>
+</div>
+<div class="home" id="home">
+    <div class="inerhome1">
+    <h1 >Welcome to Jeep Collection</h1>
+    <h2>Where passion meets excellence.</h2>
+</div>
+<div class="inerhome2">
+<p> It is our passion that led us to start our business 20 years ago and the excellence that has led us to where we are today. Our customers have been putting their trust in us to deliver the most meticulous and custom care for each transaction. Whether you are selling or buying, we are here to serve your needs!</p>
+<ul class="inlist">
+    <li>Quick and hassle-free Jeep buying process</li>
+    <li>Wholesale prices</li>
+    <li>Immediate cash payouts</li>
+    <li>Handpicked vehicles and growing inventory</li>
+    <li>Professional service</li>
+</ul>
+</div>
+
+</div>
+<div class="jon" id="service">
+        <h1>SERVICES</h1>
+        <div class="imagesection">
+            <img src="https://media0.giphy.com/media/JPljdNlISaycqvFiNn/200w.webp?cid=ecf05e479fl09ch1ic6o4470cat7o2a22m0pvvg79jm7zlsv&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYikFnGEOltzn07LqMwexrUIx2R05YxFcyGVsz5YdLmw&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuj-UvPQW_ZkuhYVtmzr3l4DqbvshFdsVEqA&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetJ9YiYDBR4sLfSKv3LgUEiQVclqYKWW0aw&usqp=CAU" alt="">
+        </div>
+    <div>
+        <p>To maximise the life and performance of your vehicle, here is a list of items you should check depending on the time and season. Some of these parts of your vehicle should be checked regularly, and others only in the long run. Be sure to follow your vehicle’s maintenance schedule and service interval record.Caring for your car and keeping it in proper running order takes a little bit of effort, but you definitely don’t have to be a mechanical whiz to keep your vehicle running well. The biggest hurdle is being aware of what needs to be done—and how often—for optimal vehicle upkeep. By knowing the basics about what your car needs, and when you should perform routine car maintenance, you’ll ensure that your car is in top-running condition.
+
+            As an added bonus, if you can prove that your vehicle has been well maintained, you’ll be able to ask top dollar when it’s time to resell it. And, of course, it’s important to remember that car maintenance costs, while not always cheap, can ultimately help you avoid expensive repairs down the road.
+            
+            To make it easy to keep track of your car maintenance schedule, we’ve created a simple, downloadable car maintenance checklist to help you keep on top of your automotive maintenance.</p>
+    </div><hr>
+    </div>
+    <div class="rentals" id="rent">
+        <h1>VINTAGE JEEP RENTALS FOR MOVIES, PHOTOSHOOTS AND MORE</h1>
+        <div class="rent1">
+            <h1>Rentals For Movies, Photoshoots, Commercials and More!</h1>
+            <h2>Contact us today for a large selection of rental vehicles for your projects.</h2>
+            <button>Contact us Today</button>
+        </div>
+        <div class="rent2" id="about">
+            <p>From movies and film, to photoshoots, commercials, sitcoms, TV, series, ad campaigns, parties and more, we've got some of the most unique vehicles available in Southern California and other locations!
+
+                Our fleet includes classic jeep and trucks, exotics, luxury vehicles, and more from all eras.  
+                
+                We have a large in-house fleet with over 250+ vehicles located at our warehouse facility in Los Angeles, CA and can transport our vehicles anywhere! We also store additional vehicles from our fleet across the United States with vehicles currently in Arizona, Nevada, Texas, Florida, Virginia Connecticut, New York, Maine, and Illinois.
+                
+                Our rental vehicle services include transportation, custom builds, consultation, design, engineering and more!
+                
+                We make rentals as easy, painless and as quick as possible.  Have a particular jeep in mind?  It's almost a sure thing that we'll have it, and if we don't, we can take the headache away from you and locate it for you.  Our vehicles have been featured in major movies, luxury brand photoshoots and more. 
+                
+                Check out some of our recent work below!</p>
+        </div>
+    </div>
+<div class="inventory">
+    <h1>FEATURED INVENTORY</h1>
+    <img src="https://www.sellajeep.com/mjs/sale23/ad203/index_files/vlb_thumbnails1/1976_cj7_5.jpg" alt="">
+   
+    <img src="https://www.sellajeep.com/mjs/sale23/ad185/index_files/vlb_thumbnails1/1969_kaiser_jeep_cj5_4x4_5.jpg" alt="">
+    <img src="https://www.sellajeep.com/mjs/sale22/ad157/index_files/vlb_thumbnails1/1981_jeep_j10_laredo_401_1.jpg" alt="">
+    <img src="https://www.sellajeep.com/mjs/sale23/ad169/index_files/vlb_thumbnails1/1946_cj2a_jeeps_bundle_of_3_5.jpg" alt="">
+    <img src="https://www.sellajeep.com/mjs/sale23/ad147/index_files/vlb_thumbnails1/1972_jeep_j4000_camper_edition_1.jpg" alt="">
+        <img src="https://www.sellajeep.com/mjs/sale23/ad146/index_files/vlb_thumbnails1/1966_jeep_gladiator_j2000_1.jpg" alt="">
+        <img src="https://www.sellajeep.com/mjs/sale23/ad113/index_files/vlb_thumbnails1/1953_willis_army_jeep_1.jpg" alt="">
+        <img src="https://www.sellajeep.com/mjs/sale23/ad103/index_files/vlb_thumbnails1/1963_willys_jeep_cj5_3.jpg" alt="">
+        <img src="https://www.sellajeep.com/mjs/sale23/ad100/index_files/vlb_thumbnails1/2000_jeep_wrangler_sahara_tj_4.0l_7.jpg" alt="">
+        <img src="https://www.sellajeep.com/mjs/sale23/ad087/index_files/vlb_thumbnails1/1973_cj5_1.jpg" alt="">
+</div>
+<div class="contactus"> 
+<div class="cont">
+<h1>SIGN UP TO RECEIVE OUR EMAIL NEWSLETTER</h1>
+<!-- <h2>And stay up to date with all the latest inventory, promotions, auctions, videos, and more!</h2> -->
+    <input type="textbox" placeholder="FirstName">
+    <input type="textbox" placeholder="LastName">
+    <input type="textbox" placeholder="email" required>
+    
+</div>
+<img src="https://media1.giphy.com/media/mbXsJdt6cFchW/200w.webp?cid=ecf05e47a3kqvpdbrm6wrr6zvh3l0f9ifj48244qo6fmsigu&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="">
+</div>
+<div class="last" id="call">
+    <div class="call">
+    <p><i class="fa fa-phone" style="font-size:75px;color:rgb(32, 194, 119)"></i></p>
+    <h1>Phone</h1>
+    <h2>+919035935952</h2>
+</div>
+<div class="map">
+    <p><i class="fa fa-map-marker" style="font-size:75px;color:rgb(45, 8, 155)"></i></p>
+
+    <h1>Location</h1>
+    <h2>Basvanagudi</h2>
+</div>
+<div class="mail2">
+    <p><i class="fa fa-envelope" style="font-size:70px;color:rgb(223, 21, 21)"></i></p>
+
+
+    <h1>Mail</h1>
+    <h2>gowdasathvik6@gmail.com</h2>
+</div>
+<div class="time">
+  <p><i class="fa fa-clock-o" style="font-size:75px;color:black"></i></p>
+
+
+  <h1>Timings</h1>
+  <pre>
+    Mon-Fri  9am-6pm
+    saturday 9am-3pm
+    sunday closed
+  </pre>
+  <div class="vl"></div>
+<div class="v2"></div>
+<div class="v3"></div>
+</div>
+</div>
+
+ <img src="https://media0.giphy.com/media/ggDv3yVdzvLWIZavw2/giphy.webp?cid=ecf05e47zvkqdz8s9yg46er90blkfsw6leng53yjb9jbv48u&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="" class="jeep">
+ <marquee behavior="" direction="" class="mar">Thank You Visit Again &hearts;</marquee>
+</body>
+</html>
